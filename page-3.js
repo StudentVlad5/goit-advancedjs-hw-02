@@ -1,0 +1,2 @@
+import"./assets/styles-BJlZIsW-.js";document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("promiseForm");t.addEventListener("submit",i=>{i.preventDefault();const s=Number(t.elements.delay.value),o=t.elements.state.value;new Promise((e,n)=>{setTimeout(()=>{o==="fulfilled"?e(s):n(s)},s)}).then(e=>{iziToast.success({title:"Fulfilled",message:`Fulfilled promise in ${e}ms`,position:"topRight"})}).catch(e=>{iziToast.error({title:"Rejected",message:`Rejected promise in ${e}ms`,position:"topRight"})}),t.reset()})});
+//# sourceMappingURL=page-3.js.map
