@@ -10,6 +10,13 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
+
+    server: {
+      host: '127.0.0.1', // ✅ используем IPv4 localhost
+      port: 3000, // можно поменять на 3000, если 5173 занят
+      open: true, // опционально — откроет браузер при старте
+    },
+
     build: {
       sourcemap: true,
       rollupOptions: {

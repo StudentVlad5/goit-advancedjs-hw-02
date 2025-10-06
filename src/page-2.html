@@ -7,6 +7,15 @@
     <title>Page 2</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <!-- Підключення стилів бібліотек -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+  />
   <body>
     <load
       src="./partials/header.html"
@@ -17,12 +26,41 @@
     <main>
       <div class="container">
         <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
+          <span class="main-title-gradient">Welcome</span> Завдання 1. Таймер
+          зворотного відліку
         </h1>
+        <div class="wrapTimer">
+          <div>
+            <input type="text" id="datetime-picker" title="choose date" />
+            <button type="button" data-start>Start</button>
+          </div>
+          <div class="timer">
+            <div class="field">
+              <span class="value" data-days>00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="field">
+              <span class="value" data-hours>00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="field">
+              <span class="value" data-minutes>00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="field">
+              <span class="value" data-seconds>00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+        </div>
+
         <load src="./partials/back-link.html" />
       </div>
     </main>
 
     <load src="./partials/footer.html" />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+    <script type="module" src="./js/timer.js"></script>
   </body>
 </html>
