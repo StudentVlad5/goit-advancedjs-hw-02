@@ -22,14 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
     promise
       .then(delay => {
         iziToast.success({
-          title: 'Fulfilled',
+          title: '',
           message: `✅ Fulfilled promise in ${delay}ms`,
           position: 'topRight',
         });
       })
       .catch(delay => {
         iziToast.error({
-          title: 'Rejected',
+          title: '',
           message: `❌ Rejected promise in ${delay}ms`,
           position: 'topRight',
         });
