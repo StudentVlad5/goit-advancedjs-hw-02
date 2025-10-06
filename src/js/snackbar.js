@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
           title: '',
           message: `✅ Fulfilled promise in ${delay}ms`,
           position: 'topRight',
+          icon: '', // прибираємо іконку
+          iconUrl: '', // додатково вимикаємо іконку, якщо була
+          backgroundColor: '#28a745', // зелений бекграунд
+          messageColor: '#ffffff', // білий текст
+          titleColor: '#ffffff', // білий заголовок
         });
       })
       .catch(delay => {
@@ -32,6 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
           title: '',
           message: `❌ Rejected promise in ${delay}ms`,
           position: 'topRight',
+          icon: '',
+          iconUrl: '',
+          backgroundColor: '#dc3545', // червоний бекграунд
+          messageColor: '#ffffff',
+          titleColor: '#ffffff',
         });
       });
 
